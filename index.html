@@ -1,30 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>leeeeffff</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-    <div class="section" id="section1">
+<body>
+    
+    <div class="section" id="section1"></div>
+    <div id="timer">30s</div>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/62759fa1-0d48-4e9f-9372-f917c1a83dad/dfic04n-fba7df42-a4b9-41a9-9233-d2b5133c55bf.png/v1/fill/w_900,h_888/pac_man__pixels__by_richsquid1996_dfic04n-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTg4IiwicGF0aCI6IlwvZlwvNjI3NTlmYTEtMGQ0OC00ZTlmLTkzNzItZjkxN2MxYTgzZGFkXC9kZmljMDRuLWZiYTdkZjQyLWE0YjktNDFhOS05MjMzLWQyYjUxMzNjNTViZi5wbmciLCJ3aWR0aCI6Ijw9MTAwMSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.sJX7IjUCoAjT1-jHXM6PuRHFTKzqV3WP6A6Pa6SYRPI" class="top-left-image">
+    <img src="https://pixeljoint.com/files/icons/full/arcadepixeljoint.gif" class="arcade">
+    <img src="https://64.media.tumblr.com/6688867fc55433fdaee2111ed55f89ac/tumblr_mv4rghE5Sb1s335jfo1_r1_500.gif" class="diving">
+    <img src="https://art.pixilart.com/da3bb6ce08cb8b7.png" class="goldcoin">
+    <img src="https://art.pixilart.com/thumb/c3ccd3aeb9efb45.png" class="soon">
+
+    <div class="about" onclick="scrollToSection('about-section')">About</div>
+    <div class="hobby" onclick="scrollToSection('hobbies-section')">Hobbies</div>
+    <div class="project" onclick="scrollToSection('projects-section')">Projects</div>
+    <div class="house" onclick="scrollToSection('home-address-section')">My HOME Address</div>
+
+    
+    <div id="home-address-section" class="home-address-content"></div>
+
+    <div class="section" id="scroll-spacer">
         <div class="text-3d">TIME</div>
-        <div class="insert">INSERT COIN ©</div>
+        <div class="insert">YOU have 30 seconds !!!!!!</div>
         <div class="point-start" >|</div>
         <div class="point-start1">|</div>
         <div class="point-start2">|</div>
         <div class="point-end">V</div>
+
+        <div id="about-section" class="about-content"> -> ABOUT ME <- </div>
+        <<div class="name">- NAME:<br> <hr> CHANG HYUN LEE<br></div>
+        <<div class="degree">- DEGREE:<br> <hr>COMPUTER SCIENCE AND COMMERCE<br></div>
+        <<div class="country">- NATIONALITY:<br> <hr> KOREAN<br></div>
+        <<div class="study">- YEAR:<br> <hr> SECOND YEAR</div>
+        <<div class="personality">- PERSONALITY:<br> <hr> I FORGOT<br></div>
+        <<div class="tmi">- TMI:<br> <hr> I GREW UP IN THAILAND, WENT TO SCHOOL THERE FOR 14 YEARS, WENT TO UOFT FOR COMMERCE THEN DECIDED TO MOVE TO UNSW AFTER FIRST YEAR THERE<br></div>
+    
+        <div id="hobbies-section" class="hobbies-content">-> HOBBIES <-</div>
+        <<div class="diving1">- DIVING <hr> </div>
+        <<div class="football">- FOOTBALL <hr> </div>
+        <<div class="game">- GAMES (LEAGUE) <hr></div>
+        <<div class="movie">- MOVIES <hr> </div>
+
+        <div id="projects-section" class="projects-content"> -> PROJECTS <- </div>
+       
     </div>
+
+    
     <div class="curve"></div>
+    <div class="curve1"></div>
 
     <a href="https://github.com/leeeeffff" target="_blank" rel="noopener noreferrer" class="floating-object">
-        <img src="https://example.com/github-logo.png" alt="GitHub Logo"> <!-- Replace URL with your GitHub logo URL -->
+        <img src="https://example.com/github-logo.png" >
     </a>
     <a href="https://www.linkedin.com/in/chang-hyun-lee-0aa445254/" target="_blank" rel="noopener noreferrer" class="floating-object-2">
-        <img src="https://example.com/linkedin-logo.png" alt="LinkedIn Logo"> <!-- Replace URL with your LinkedIn logo URL -->
+        <img src="https://example.com/linkedin-logo.png" > 
     </a>
     <a href="https://discordapp.com/users/.,.#4063" target="_blank" rel="noopener noreferrer" class="floating-object-3">
-        <img src="https://example.com/discord-logo.png" alt="Discord Logo"> <!-- Replace URL with your Discord logo URL -->
+        <img src="https://example.com/discord-logo.png" > 
     </a>
+    <section class="section">
+
+    </section>
+
+    
     <div class="scroll-spacer"></div>
+    
+    <script>
+        // setTimeout(function(){
+        //     window.close();
+        // }, 30000);
+        document.addEventListener('DOMContentLoaded', function() {
+            var top_left_image = document.querySelector('.top-left-image');
+            
+            top_left_image.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        var countDownDate = new Date().getTime() + 30000;
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+        function scrollToSection(sectionId, offset = 0) {
+            const section = document.getElementById(sectionId);
+            const sectionRect = section.getBoundingClientRect();
+            const absoluteSectionTop = window.pageYOffset + sectionRect.top - offset;
+
+            window.scrollTo({
+                top: absoluteSectionTop,
+                behavior: 'smooth'
+            });
+        }
+    </script> 
 
 </body>
 </html>
