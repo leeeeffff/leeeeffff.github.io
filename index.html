@@ -3,6 +3,7 @@
 <head>
     <title>leeeeffff</title>
     <link rel="stylesheet" href="style.css">
+    <title>Time's Up</title>
     <style>
     nav a,
     .nav-link {
@@ -42,7 +43,7 @@
     <div class="asof">This page has been updated <br> as of Fec 8th, 2024</div>
     <div class="theme">The theme of this page is "TIME", while wondering what i was going to build, <br>I realised that 
         i was always being chased by "time" e.g. uni work or smt else. <br>So i decided to save everyones "time" and give them 30 seconds 
-        before the page closes it self.<br> Ure Welcome. <hr></div>
+        before the page turns black.<br> Ure Welcome. <hr></div>
     <div class="copy"> © 2024-5962 leeeeffff. All rights reserved </div>
 
     <div class="up"> press pacman <br>to go back up</div>
@@ -177,9 +178,6 @@
     <div class="scroll-spacer"></div>
     
     <script>
-        setTimeout(function(){
-            window.close();
-        }, 30000);
         document.addEventListener('DOMContentLoaded', function() {
             var top_left_image = document.querySelector('.top-left-image');
             
@@ -191,6 +189,7 @@
             });
         });
 
+                
         var countDownDate = new Date().getTime() + 30000;
         var x = setInterval(function() {
             var now = new Date().getTime();
@@ -199,7 +198,10 @@
             document.getElementById("timer").innerHTML = seconds + "s ";
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("timer").innerHTML = "EXPIRED";
+                var overlay = document.createElement('div');
+                overlay.className = 'black-overlay';
+                document.body.appendChild(overlay);
+                document.getElementById("timer").style.display = "none"; // Optionally hide the timer
             }
         }, 1000);
 
