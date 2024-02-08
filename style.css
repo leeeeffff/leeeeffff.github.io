@@ -25,6 +25,54 @@ body {
     z-index: -1;
 }
 
+.nav-bar, .about, .hobby, .project, .house {
+    font-size: 2vw; 
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1200px) {
+    .mega, .mega1, .arcade, .diving, .goldcoin, .goldcoin1, .goldcoin2, .goldcoin3, .goldcoin4, .goldcoin5, .goldcoin6, .soon, .sus {
+        width: 50vw; 
+    }
+
+    .text-3d, .insert, .about-content, .hobbies-content, .projects-content, .home-address-content {
+        font-size: 4vw; 
+    }
+}
+
+@media (max-width: 768px) {
+    .mega, .mega1, .arcade, .diving, .goldcoin, .goldcoin1, .goldcoin2, .goldcoin3, .goldcoin4, .goldcoin5, .goldcoin6, .soon, .sus {
+        width: 60vw; 
+    }
+
+    .text-3d, .insert, .about-content, .hobbies-content, .projects-content, .home-address-content {
+        font-size: 6vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .mega, .mega1, .arcade, .diving, .goldcoin, .goldcoin1, .goldcoin2, .goldcoin3, .goldcoin4, .goldcoin5, .goldcoin6, .soon, .sus {
+        width: 80vw; 
+    }
+
+    .text-3d, .insert, .about-content, .hobbies-content, .projects-content, .home-address-content {
+        font-size: 8vw; 
+    }
+
+    .nav-bar, .about, .hobby, .project, .house {
+        padding: 5px 0;
+    }
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+}
+
 .black-overlay {
     position: fixed;
     top: 0;
@@ -166,7 +214,7 @@ body {
     transform: skewY(-10deg);  
     position: fixed;
     top: 7%;
-    left: 50%;
+    left: 51%;
     transform: translate(-50%, -50%) skewY(-6deg);
     transform-origin:bottom left;
     z-index: 1;
@@ -524,7 +572,7 @@ body {
     transform-origin:bottom left;
     transform: skewY(-10deg);  
     position: absolute;
-    top: 570%;
+    top: 578%;
     left: 50%;
     transform: translate(-50%, -50%) skewY(6deg);
     transform-origin:bottom left;
@@ -604,11 +652,9 @@ body {
     font-smooth: never;
     -webkit-font-smoothing : none;
     font-size: 200px;
-    -webkit-text-stroke-width: 0.5px;
-    transform-origin:bottom left;
-    transform: skewY(-10deg);  
+    -webkit-text-stroke-width: 0.5px; 
     position: absolute;
-    top: 355%;
+    top: 368%;
     left: 50%;
     transform: translate(-50%, -50%) skewY(6deg);
     transform-origin:bottom left;
@@ -793,7 +839,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(32, 40, 49);
-    transform: translate(0%, 580%);
+    transform: translate(0%, 560%);
     z-index: 0;
 }
 
@@ -805,7 +851,7 @@ body {
     width: 70%;
     height: 100%;
     background-color: rgba(32, 40, 49,0.75);
-    transform: translate(20%, -160%);
+    transform: translate(20%, -145%);
 }
 
 
@@ -872,6 +918,17 @@ body {
     position: absolute;
     top: 12%;
     left: 0%;
+    color: #E6E600;
+    padding: 10px;
+    font-size: 25px;
+    font-family: myFont;
+    z-index: 3;
+}
+
+.up1 {
+    position: absolute;
+    top: 12%;
+    left: 75%;
     color: #E6E600;
     padding: 10px;
     font-size: 25px;
@@ -1123,7 +1180,7 @@ body {
     transform: skewY(-10deg);  
     position: absolute;
     top:380%;
-    left: 67%;
+    left: 50%;
     transform: translate(-50%, -50%) skewY(6deg);
     transform-origin:bottom left;
     z-index: 2;
@@ -1159,7 +1216,7 @@ body {
 .diving1{
     position: absolute;
     top: 390%;
-    left: 50%;
+    left: 45%;
     color: #E6E600;
     padding: 10px;
     font-size: 30px;
@@ -1170,7 +1227,7 @@ body {
 .football{
     position: absolute;
     top: 410%;
-    left: 50%;
+    left: 45%;
     color: #E6E600;
     padding: 10px;
     font-size: 30px;
@@ -1181,7 +1238,7 @@ body {
 .game{
     position: absolute;
     top: 430%;
-    left: 50%;
+    left: 45%;
     color: #E6E600;
     padding: 10px;
     font-size: 30px;
@@ -1192,7 +1249,7 @@ body {
 .movie{
     position: absolute;
     top: 450%;
-    left: 50%;
+    left: 45%;
     color: #E6E600;
     padding: 10px;
     font-size: 30px;
